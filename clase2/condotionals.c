@@ -5,20 +5,23 @@
 
 int main() { // int -> función entera con retorno entero
     // Imprimir el mensaje en la consola
-    std::cout << "Calculadora en C" << std::endl;
+    std::cout << "Comparador de numeros" << std::endl;
    
-    float a;         // Se necesita especificar el tipo de dato float
-    float b; 
-    float c; 
+    float a;         // Se necesita especificar el tipo de dato float 
 
-    std::cout << "Digite a: "; 
+    std::cout << "Digite un numero entero: "; 
     std::cin >> a;   
-    std::cout << "Digite b: "; 
-    std::cin >> b;
-    
-    c = a+b;
 
-    std::cout << "a: " << a << ", b: " << b << ", c: "<< c << std::endl;
+    if (a<0){
+        std::cout<<"EL numero es negativo"<< std::endl;
+    }
+    else{
+        std::cout<<"El numero es postivo"<< std::endl;
+    }
+
+    if(a==0){
+        std::cout<<"EL numero es cero"<< std::endl;
+    }
     // Retornar 0 para indicar que el programa terminó exitosamente
     return 0;
 }
