@@ -15,6 +15,7 @@ int main() { // int -> función entera con retorno entero
 
     if (tipo_triangulo == "equilatero") {
         float a;
+
         std::cout << "Digite el lado del triángulo: "; 
         std::cin >> a;
         area = (sqrt(3)/4)*pow(a,2);
